@@ -2,8 +2,82 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Chácara Estr. da Laguna | CH001</title>
-<link rel="../style.css" href="../style.css">
+<link rel="stylesheet" href="../style.css">
+
+<style>
+/* ===== ANIMAÇÕES ===== */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-up {
+    animation: fadeUp 0.8s ease forwards;
+}
+
+/* ===== GALERIA ===== */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+}
+
+/* ===== INFO BOX ===== */
+.info-box {
+    background: #f4f7fa;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.info-item {
+    font-size: 15px;
+}
+
+.price-large {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0b1c2d;
+    margin: 15px 0;
+}
+
+/* ===== BOTÃO ===== */
+.whatsapp-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 25px;
+    background: #0b1c2d;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+    background: #1e3a5f;
+    transform: translateY(-3px);
+}
+</style>
+
 </head>
 <body>
 
@@ -11,45 +85,53 @@
     <h1>Bruno da Silva | Corretor</h1>
     <nav>
         <a href="../index.html">Início</a>
+        <a href="../imoveis.html">Imóveis</a>
     </nav>
 </header>
 
-<section class="container">
+<section class="container fade-up">
 
-<h2>Chácara Estr. da Laguna</h2>
-<p><strong>Código:</strong> CH001</p>
+    <h2>Chácara Estr. da Laguna</h2>
+    <p><strong>Código:</strong> CH001</p>
 
-<div class="price">R$ 170.000,00</div>
+    <div class="price-large">R$ 170.000,00</div>
 
-<div class="details">
-    <div><strong>Área:</strong> 30x45m²</div>
-    <div><strong>Cidade:</strong> Capão da Canoa (Curumim)</div>
-    <div><strong>Água:</strong> Sim</div>
-    <div><strong>Luz:</strong> Sim</div>
-    <div><strong>Acesso:</strong> Estrada de chão</div>
-    <div><strong>Distância:</strong> 1 Km do Parque Acqua Lokos</div>
-    <div><strong>Documentação:</strong> Contrato de compra e venda</div>
-</div>
+    <div class="info-box">
+        <div class="info-item"><strong>Área:</strong> 30x45m²</div>
+        <div class="info-item"><strong>Cidade:</strong> Capão da Canoa (Curumim)</div>
+        <div class="info-item"><strong>Água:</strong> Sim</div>
+        <div class="info-item"><strong>Luz:</strong> Sim</div>
+        <div class="info-item"><strong>Acesso:</strong> Estrada de chão</div>
+        <div class="info-item"><strong>Distância:</strong> 1 Km do Parque Acqua Lokos</div>
+        <div class="info-item"><strong>Documentação:</strong> Contrato de compra e venda</div>
+    </div>
 
-<h3>Galeria</h3>
+    <h3 style="margin-top:40px;">Galeria de Fotos</h3>
 
-<div class="cards">
-    <img src="../imagens/CH001/chacara1.jpg" alt="">
-    <img src="../imagens/CH001/chacara2.jpg" alt="">
-    <img src="../imagens/CH001/chacara3.jpg" alt="">
-    <img src="../imagens/CH001/chacara4.jpg" alt="">
-    <img src="../imagens/CH001/chacara5.jpg" alt="">
-    <img src="../imagens/CH001/chacara6.jpg" alt="">
-</div>
+    <div class="gallery">
+        <img src="../imagens/CH001/chacara1.jpg" alt="">
+        <img src="../imagens/CH001/chacara2.jpg" alt="">
+        <img src="../imagens/CH001/chacara3.jpg" alt="">
+        <img src="../imagens/CH001/chacara4.jpg" alt="">
+        <img src="../imagens/CH001/chacara5.jpg" alt="">
+        <img src="../imagens/CH001/chacara6.jpg" alt="">
+    </div>
 
-<h3>Localização</h3>
-<iframe src="https://maps.google.com/maps?q=Capão%20da%20Canoa%20Curumim&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+    <h3 style="margin-top:40px;">Localização</h3>
 
-<br><br>
+    <iframe 
+        src="https://maps.google.com/maps?q=Acqua%20Lokos%20Capão%20da%20Canoa&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        width="100%" 
+        height="400" 
+        style="border:0; border-radius:10px;" 
+        allowfullscreen="" 
+        loading="lazy">
+    </iframe>
 
-<a class="btn" href="https://wa.me/5551999190482?text=Olá,%20tenho%20interesse%20na%20Chácara%20Estr.%20da%20Laguna,%20código%20CH001,%20valor%20R$170.000,00.%20Gostaria%20de%20mais%20informações.">
-Falar no WhatsApp
-</a>
+    <a class="whatsapp-btn" 
+       href="https://wa.me/5551999190482?text=Olá,%20tenho%20interesse%20na%20Chácara%20Estr.%20da%20Laguna%20-%20CH001,%20valor%20R$170.000,00.%20Gostaria%20de%20mais%20informações.">
+       Falar no WhatsApp
+    </a>
 
 </section>
 
