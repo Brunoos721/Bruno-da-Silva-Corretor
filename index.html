@@ -2,38 +2,69 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bruno da Silva | Corretor de Imóveis</title>
+
 <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
 
-<header>
-    <h1>Bruno da Silva | Corretor</h1>
+<header class="navbar">
+    <div class="logo">Bruno da Silva</div>
     <nav>
-        <a href="index.html">Início</a>
+        <a href="#">Início</a>
         <a href="imoveis.html">Imóveis</a>
+        <a href="#">Contato</a>
     </nav>
 </header>
 
 <section class="hero">
-    <h2>Imóveis selecionados com segurança e valorização</h2>
-</section>
-
-<section class="container">
-    <h2>Destaque</h2>
-
-    <div class="cards">
-        <div class="card">
-            <img src="imagens/CH001/chacara1.jpg" alt="Chácara Estr. da Laguna">
-            <div class="card-content">
-                <h3>Chácara Estr. da Laguna</h3>
-                <p>Capão da Canoa (Curumim)</p>
-                <div class="price">R$ 170.000,00</div>
-                <a href="imoveis/chacara-estrada-da-laguna.html" class="btn">Ver Detalhes</a>
-            </div>
+    <div class="hero-content" data-aos="fade-up">
+        <h1>Imóveis e Terrenos Selecionados</h1>
+        <p>Atendimento estratégico para quem quer investir com segurança.</p>
+        <div class="buttons">
+            <a href="imoveis.html" class="btn-primary">Ver Imóveis</a>
+            <a href="https://wa.me/5551999190482" class="btn-outline">Falar no WhatsApp</a>
         </div>
     </div>
 </section>
+
+<section class="categories">
+    <h2 data-aos="fade-up">Categorias</h2>
+
+    <div class="grid">
+        <div class="card" data-aos="fade-up">
+            <h3>Casas</h3>
+        </div>
+        <div class="card" data-aos="fade-up">
+            <h3>Apartamentos</h3>
+        </div>
+        <div class="card" data-aos="fade-up">
+            <h3>Terrenos</h3>
+        </div>
+        <div class="card" data-aos="fade-up">
+            <h3>Chácaras</h3>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <div data-aos="fade-up">
+        <h2>Pronto para investir?</h2>
+        <a href="https://wa.me/5551999190482" class="btn-primary">Conversar Agora</a>
+    </div>
+</section>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({
+    duration: 800,
+    once: true
+});
+</script>
 
 </body>
 </html>
