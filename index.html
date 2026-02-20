@@ -22,68 +22,63 @@
 </header>
 
 <section class="hero">
+    <div class="overlay"></div>
     <div class="hero-content" data-aos="fade-up">
-        <h1>Imóveis e Terrenos Selecionados</h1>
-        <p>Atendimento estratégico para quem quer investir com segurança e visão de futuro.</p>
+        <h1>Imóveis de Alto Padrão e Oportunidades Exclusivas</h1>
+        <p>Estratégia, visão e valorização. Investimentos inteligentes começam aqui.</p>
         <div class="buttons">
-            <a href="imoveis/chacaras.html" class="btn-primary">Ver Imóveis</a>
-            <a href="https://wa.me/5551999190482" target="_blank" class="btn-outline">Falar no WhatsApp</a>
+            <a href="imoveis/chacaras.html" class="btn-primary">Explorar Imóveis</a>
+            <a href="https://wa.me/5551999190482" target="_blank" class="btn-outline">
+                Atendimento Exclusivo
+            </a>
         </div>
-    </div>
-</section>
-
-<section class="categories">
-    <h2 data-aos="fade-up">Categorias</h2>
-
-    <div class="grid">
-
-        <a href="#" class="card" data-aos="fade-up">
-            <h3>Casas</h3>
-        </a>
-
-        <a href="#" class="card" data-aos="fade-up">
-            <h3>Apartamentos</h3>
-        </a>
-
-        <a href="#" class="card" data-aos="fade-up">
-            <h3>Terrenos</h3>
-        </a>
-
-        <a href="imoveis/chacaras.html" class="card" data-aos="fade-up">
-            <h3>Chácaras</h3>
-        </a>
-
     </div>
 </section>
 
 <section class="about">
     <div class="about-container" data-aos="fade-up">
-        <h2>Por que investir comigo?</h2>
+        <h2>Excelência no Mercado Imobiliário</h2>
         <div class="about-grid">
+
             <div class="about-box">
-                <h3>📍 Estratégia</h3>
-                <p>Análise inteligente de localização e valorização futura.</p>
+                <h3>📈 Análise Estratégica</h3>
+                <p>Estudo aprofundado de valorização e potencial futuro.</p>
             </div>
+
             <div class="about-box">
-                <h3>🔎 Seleção Rigorosa</h3>
-                <p>Imóveis escolhidos com critério e potencial real de investimento.</p>
+                <h3>🏡 Curadoria Premium</h3>
+                <p>Imóveis selecionados com critérios de qualidade e oportunidade.</p>
             </div>
+
             <div class="about-box">
-                <h3>🤝 Atendimento Direto</h3>
-                <p>Contato direto comigo do início à assinatura do contrato.</p>
+                <h3>🤝 Atendimento Personalizado</h3>
+                <p>Relacionamento direto e acompanhamento completo.</p>
             </div>
+
         </div>
     </div>
 </section>
 
 <section class="cta">
     <div data-aos="fade-up">
-        <h2>Pronto para investir?</h2>
-        <a href="https://wa.me/5551999190482" target="_blank" class="btn-primary">Conversar Agora</a>
+        <h2>Pronto para elevar seu investimento?</h2>
+        <a href="https://wa.me/5551999190482" target="_blank" class="btn-primary">
+            Falar Agora no WhatsApp
+        </a>
     </div>
 </section>
 
-<!-- BOTÃO FLUTUANTE WHATSAPP -->
+<footer class="footer">
+    <div class="footer-content">
+        <h3>Bruno da Silva</h3>
+        <p>Consultoria Imobiliária Estratégica</p>
+        <p>WhatsApp: (51) 99919-0482</p>
+        <p class="copyright">
+            © 2026 Bruno da Silva - Todos os direitos reservados
+        </p>
+    </div>
+</footer>
+
 <a href="https://wa.me/5551999190482?text=Olá%20Bruno,%20tenho%20interesse%20em%20imóveis."
    class="whatsapp-float"
    target="_blank">
@@ -93,8 +88,13 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
 AOS.init({
-    duration: 800,
+    duration: 900,
     once: true
+});
+
+window.addEventListener("scroll", function(){
+    const navbar = document.querySelector(".navbar");
+    navbar.classList.toggle("scrolled", window.scrollY > 50);
 });
 </script>
 
