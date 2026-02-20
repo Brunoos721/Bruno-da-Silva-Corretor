@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CH001 | Chácara Estrada da Laguna | Bruno da Silva</title>
+<title>CH001 | Chácara Estrada da Laguna</title>
 
 <link rel="stylesheet" href="../style.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-
 </head>
+
 <body>
 
 <header class="navbar">
@@ -43,8 +43,11 @@
 <section class="property-info-premium">
 
     <div class="info-left">
-        <span class="code-detail">Código: CH001</span>
+
+        <span class="code-detail">Código CH001</span>
+
         <h1>Chácara Estrada da Laguna</h1>
+
         <p class="location">Capão da Canoa – Curumim</p>
 
         <div class="price-detail">R$ 170.000,00</div>
@@ -59,47 +62,55 @@
         </div>
 
         <div class="description">
-            <h2>Descrição</h2>
+            <h2>Sobre o imóvel</h2>
             <p>
-                Excelente oportunidade para quem busca tranquilidade,
-                contato com a natureza e valorização imobiliária.
-            </p>
-            <p>
-                Terreno amplo ideal para moradia, casa de veraneio
-                ou investimento em região em crescimento.
+                Terreno amplo em região tranquila, ideal para moradia,
+                lazer ou investimento. Excelente oportunidade para quem
+                busca contato com a natureza e valorização futura.
             </p>
         </div>
 
-        <a href="https://wa.me/5551999190482?text=Tenho%20interesse%20na%20CH001%20-%20Ch%C3%A1cara%20Estrada%20da%20Laguna"
+        <a href="https://wa.me/5551999190482?text=Tenho%20interesse%20na%20CH001"
            class="btn-whatsapp-premium"
            target="_blank">
-           Falar no WhatsApp
+           Solicitar Atendimento
         </a>
+
     </div>
 
     <div class="info-right">
         <h2>Localização</h2>
 
-        <div class="map-container">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3468.32680955775!2d-49.974777800000005!3d-29.623250000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjnCsDM3JzIzLjciUyA0OcKwNTgnMjkuMiJX!5e0!3m2!1spt-BR!2sbr!4v1771546420621!5m2!1spt-BR!2sbr"
-                width="100%" 
-                height="350"
-                style="border:0; border-radius:16px;" 
-                allowfullscreen="" 
-                loading="lazy">
-            </iframe>
-        </div>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3468.32680955775!2d-49.974777800000005!3d-29.623250000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjnCsDM3JzIzLjciUyA0OcKwNTgnMjkuMiJX!5e0!3m2!1spt-BR!2sbr!4v1771546420621!5m2!1spt-BR!2sbr"
+            width="100%" 
+            height="380"
+            style="border:0; border-radius:20px; box-shadow: 0 30px 80px rgba(0,0,0,0.15);"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+
     </div>
 
 </section>
+
+<footer class="footer">
+    <div class="footer-container">
+        <h3>Bruno da Silva</h3>
+        <p>Consultoria Imobiliária</p>
+        <p>(51) 99919-0482</p>
+        <div class="footer-copy">
+            © 2026 Bruno da Silva - Todos os direitos reservados
+        </div>
+    </div>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script>
 var swiper = new Swiper(".mySwiper", {
   loop: true,
-  spaceBetween: 10,
+  spaceBetween: 20,
   centeredSlides: true,
   autoplay: {
     delay: 3500,
@@ -113,6 +124,13 @@ var swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+});
+</script>
+
+<script>
+window.addEventListener("scroll", function(){
+    const navbar = document.querySelector(".navbar");
+    navbar.classList.toggle("scrolled", window.scrollY > 50);
 });
 </script>
 
