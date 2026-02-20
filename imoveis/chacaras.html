@@ -4,7 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Chácaras | Bruno da Silva</title>
+
 <link rel="stylesheet" href="../style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -12,10 +16,12 @@
     <div class="logo">Bruno da Silva</div>
     <nav>
         <a href="../index.html">Início</a>
+        <a href="chacaras.html">Chácaras</a>
+        <a href="https://wa.me/5551999190482">Contato</a>
     </nav>
 </header>
 
-<section class="page-header">
+<section class="page-header" data-aos="fade-up">
     <h1>Chácaras Disponíveis</h1>
     <p>Selecione uma opção para ver detalhes completos</p>
 </section>
@@ -23,8 +29,11 @@
 <section class="property-grid">
 
     <!-- CARD CH001 -->
-    <a href="chacara-estrada-da-laguna.html" class="property-card">
-        <img src="../imagens/CH001/chacara1.jpg" alt="Chácara Estrada da Laguna">
+    <div class="property-card" data-aos="fade-up">
+
+        <a href="chacara-estrada-da-laguna.html">
+            <img src="../imagens/CH001/chacara1.jpg" alt="Chácara Estrada da Laguna">
+        </a>
 
         <div class="property-info">
             <span class="code">CH001</span>
@@ -32,10 +41,33 @@
             <p>Capão da Canoa (Curumim)</p>
             <p>30x45m</p>
             <div class="price">R$ 170.000,00</div>
+
+            <div style="margin-top:20px; display:flex; gap:10px; flex-wrap:wrap;">
+                
+                <a href="chacara-estrada-da-laguna.html" class="btn-primary" style="padding:10px 20px; font-size:14px;">
+                    Ver Detalhes
+                </a>
+
+                <a href="https://wa.me/5551999190482?text=Olá%2C%20tenho%20interesse%20na%20CH001%20-%20Chácara%20Estr.%20da%20Laguna"
+                   class="btn-outline"
+                   style="padding:10px 20px; font-size:14px; border:1px solid var(--accent); color:var(--accent);">
+                   WhatsApp
+                </a>
+
+            </div>
+
         </div>
-    </a>
+    </div>
 
 </section>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({
+    duration: 800,
+    once: true
+});
+</script>
 
 </body>
 </html>
