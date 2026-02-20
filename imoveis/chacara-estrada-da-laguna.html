@@ -1,1 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CH001 | Chácara Estrada da Laguna | Bruno da Silva</title>
+<link rel="stylesheet" href="../style.css">
 
+<!-- SWIPER SLIDER -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">Bruno da Silva</div>
+    <nav>
+        <a href="../index.html">Início</a>
+        <a href="chacaras.html">Chácaras</a>
+    </nav>
+</header>
+
+<section class="property-hero">
+
+    <div class="badge">OPORTUNIDADE</div>
+
+    <!-- SLIDER -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="../imagens/CH001/chacara1.jpg"></div>
+            <div class="swiper-slide"><img src="../imagens/CH001/chacara2.jpg"></div>
+            <div class="swiper-slide"><img src="../imagens/CH001/chacara3.jpg"></div>
+            <div class="swiper-slide"><img src="../imagens/CH001/chacara4.jpg"></div>
+            <div class="swiper-slide"><img src="../imagens/CH001/chacara5.jpg"></div>
+            <div class="swiper-slide"><img src="../imagens/CH001/chacara6.jpg"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+</section>
+
+<section class="property-info-premium">
+
+    <div class="info-left">
+        <span class="code-detail">Código: CH001</span>
+        <h1>Chácara Estrada da Laguna</h1>
+        <p class="location">Capão da Canoa – Curumim</p>
+
+        <div class="price-detail">R$ 170.000,00</div>
+
+        <div class="specs">
+            <div>📏 30x45m</div>
+            <div>🌿 Área ampla</div>
+            <div>📍 Localização estratégica</div>
+            <div>✔ Disponível</div>
+        </div>
+
+        <div class="description">
+            <h2>Descrição</h2>
+            <p>
+                Excelente oportunidade para quem busca tranquilidade,
+                contato com a natureza e valorização imobiliária.
+            </p>
+            <p>
+                Terreno amplo, ideal para moradia, casa de veraneio
+                ou investimento em região em crescimento.
+            </p>
+        </div>
+
+        <a href="https://wa.me/5551999190482?text=Tenho%20interesse%20na%20Ch%C3%A1cara%20da%20Estrada%20da%20Laguna"
+           class="btn-whatsapp-premium"
+           target="_blank">
+           Falar no WhatsApp
+        </a>
+    </div>
+
+    <div class="info-right">
+        <h2>Localização</h2>
+
+        <!-- COLE AQUI O IFRAME DO GOOGLE MAPS -->
+        <iframe 
+            src="https://maps.app.goo.gl/jgwa2C6BYupxotAw9"
+            width="100%" 
+            height="350" 
+            style="border:0; border-radius:12px;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+var swiper = new Swiper(".mySwiper", {
+  loop: true,
+  spaceBetween: 10,
+  centeredSlides: true,
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+</script>
+
+</body>
+</html>
