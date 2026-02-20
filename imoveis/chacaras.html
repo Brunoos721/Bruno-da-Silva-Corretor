@@ -8,8 +8,8 @@
 <link rel="stylesheet" href="../style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
 </head>
+
 <body>
 
 <header class="navbar">
@@ -17,18 +17,19 @@
     <nav>
         <a href="../index.html">Início</a>
         <a href="chacaras.html">Chácaras</a>
-        <a href="https://wa.me/5551999190482">Contato</a>
+        <a href="https://wa.me/5551999190482" target="_blank">Contato</a>
     </nav>
 </header>
 
 <section class="page-header" data-aos="fade-up">
-    <h1>Chácaras Disponíveis</h1>
-    <p>Selecione uma opção para ver detalhes completos</p>
+    <div class="container">
+        <h1>Chácaras Disponíveis</h1>
+        <p>Imóveis selecionados com potencial de valorização</p>
+    </div>
 </section>
 
-<section class="property-grid">
+<section class="property-grid container">
 
-    <!-- CARD CH001 -->
     <div class="property-card" data-aos="fade-up">
 
         <a href="chacara-estrada-da-laguna.html">
@@ -37,35 +38,46 @@
 
         <div class="property-info">
             <span class="code">CH001</span>
-            <h3>Chácara Estr. da Laguna</h3>
-            <p>Capão da Canoa (Curumim)</p>
-            <p>30x45m</p>
+            <h3>Chácara Estrada da Laguna</h3>
+            <p class="location">Capão da Canoa – Curumim</p>
+
             <div class="price">R$ 170.000,00</div>
 
-            <div style="margin-top:20px; display:flex; gap:10px; flex-wrap:wrap;">
-                
-                <a href="chacara-estrada-da-laguna.html" class="btn-primary" style="padding:10px 20px; font-size:14px;">
+            <div class="property-buttons">
+                <a href="chacara-estrada-da-laguna.html" class="btn-primary">
                     Ver Detalhes
                 </a>
 
-                <a href="https://wa.me/5551999190482?text=Olá%2C%20tenho%20interesse%20na%20CH001%20-%20Chácara%20Estr.%20da%20Laguna"
+                <a href="https://wa.me/5551999190482?text=Tenho%20interesse%20na%20CH001"
                    class="btn-outline"
-                   style="padding:10px 20px; font-size:14px; border:1px solid var(--accent); color:var(--accent);">
+                   target="_blank">
                    WhatsApp
                 </a>
-
             </div>
-
         </div>
+
     </div>
 
 </section>
 
+<footer class="footer">
+    <div class="footer-container">
+        <h3>Bruno da Silva</h3>
+        <p>Consultoria Imobiliária</p>
+        <p>(51) 99919-0482</p>
+        <div class="footer-copy">
+            © 2026 Bruno da Silva - Todos os direitos reservados
+        </div>
+    </div>
+</footer>
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-AOS.init({
-    duration: 800,
-    once: true
+AOS.init({ duration: 900, once: true });
+
+window.addEventListener("scroll", function(){
+    const navbar = document.querySelector(".navbar");
+    navbar.classList.toggle("scrolled", window.scrollY > 50);
 });
 </script>
 
