@@ -1,87 +1,83 @@
-// ==========================
-// ANIMAÇÃO HERO FADE + SLIDE
-// ==========================
+// ===============================
+// LOADER INICIAL
+// ===============================
 
-document.addEventListener("DOMContentLoaded", () => {
-
-    const heroContent = document.querySelector(".hero-content");
-
-    heroContent.style.opacity = "0";
-    heroContent.style.transform = "translateY(40px)";
-
-    setTimeout(() => {
-        heroContent.style.transition = "all 1.2s ease";
-        heroContent.style.opacity = "1";
-        heroContent.style.transform = "translateY(0)";
-    }, 400);
-
+window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+    if(loader){
+        loader.classList.add("loader-hide");
+    }
 });
 
+// ===============================
+// HEADER DINÂMICO
+// ===============================
 
-// ==========================
-// REVEAL SUAVE AO SCROLL
-// ==========================
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = "1";
-            entry.target.style.transform = "translateY(0)";
-        }
-    });
-}, {
-    threshold: 0.15
-});
-
-document.querySelectorAll(".credibilidade-box, .imovel-card, .sobre-content, .cta-final")
-.forEach(el => {
-    el.style.opacity = "0";
-    el.style.transform = "translateY(40px)";
-    el.style.transition = "all 0.8s ease";
-    observer.observe(el);
-});
-
-
-// ==========================
-// EFEITO PARALLAX SUAVE HERO
-// ==========================
+const header = document.querySelector("header");
 
 window.addEventListener("scroll", () => {
-    const hero = document.querySelector(".hero");
-    let offset = window.scrollY;
-    hero.style.backgroundPositionY = offset * 0.4 + "px";
+    if(window.scrollY > 80){
+        header.classList.add("header-scrolled");
+    } else {
+        header.classList.remove("header-scrolled");
+    }
 });
 
+// ===============================
+// SCROLL REVEAL SUAVE
+// ===============================
 
-// ==========================
-// NAVBAR TRANSPARÊNCIA DINÂMICA
-// ==========================
+const revealElements = document.querySelectorAll(".reveal");
 
-window.addEventListener("scroll", function(){
-    const header = document.querySelector(".header");
+const revealOnScroll = () => {
+    const triggerBottom = window.innerHeight * 0.85;
 
-    if(window.scrollY > 50){
-        header.style.background = "rgba(14,14,17,0.85)";
+    revealElements.forEach(el => {
+        const boxTop = el.getBoundingClientRect().top;
+
+        if(boxTop < triggerBottom){
+            el.classList.add("active");
+        }
+    });
+};
+
+window.addEventListener("scroll", revealOnScroll);
+
+// ===============================
+// MENU ATIVO AUTOMÁTICO
+// ===============================
+
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll("nav a");
+
+window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 120;
+        if(window.scrollY >= sectionTop){
+            current = section.getAttribute("id");
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove("active-link");
+        if(link.getAttribute("href").includes(current)){
+            link.classList.add("active-link");
+        }
+    });
+});
+
+// ===============================
+// BOTÃO WHATSAPP INTELIGENTE
+// ===============================
+
+const whatsappBtn = document.querySelector(".whatsapp-float");
+
+window.addEventListener("scroll", () => {
+    if(window.scrollY > 400){
+        whatsappBtn.classList.add("show");
     } else {
-        header.style.background = "rgba(14,14,17,0.6)";
+        whatsappBtn.classList.remove("show");
     }
-
-    // Scroll Reveal Profissional
-const reveals = document.querySelectorAll('.reveal');
-
-function revealOnScroll() {
-  const triggerBottom = window.innerHeight * 0.85;
-
-  reveals.forEach(reveal => {
-    const boxTop = reveal.getBoundingClientRect().top;
-
-    if (boxTop < triggerBottom) {
-      reveal.classList.add('active');
-    }
-  });
-    
-}
-
-window.addEventListener('scroll', revealOnScroll);
-window.addEventListener('load', revealOnScroll);
 });
