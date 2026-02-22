@@ -7,162 +7,283 @@
   --muted: #94a3b8;
 }
 
+/* ===================================
+   RESET & CONFIGURAÇÕES GLOBAIS
+=================================== */
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background: var(--primary);
-  color: var(--text);
-  overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+    background-color: #0d0d0d;
+    color: #ffffff;
+    overflow-x: hidden;
 }
 
-/* HEADER */
+/* ===================================
+   VARIÁVEIS DE IDENTIDADE
+=================================== */
 
-.header {
-  position: fixed;
-  width: 100%;
-  padding: 20px 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(15,23,42,0.85);
-  backdrop-filter: blur(10px);
-  z-index: 1000;
+:root {
+    --gold: #c6a14a;
+    --gold-light: #e5c97b;
+    --black: #0d0d0d;
+    --black-soft: #141414;
+    --gray: #aaaaaa;
+    --transition: all 0.4s ease;
+}
+
+/* ===================================
+   CONTAINER PADRÃO
+=================================== */
+
+.container {
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+/* ===================================
+   HEADER
+=================================== */
+
+header {
+    width: 100%;
+    padding: 20px 0;
+    background: rgba(13, 13, 13, 0.95);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(198, 161, 74, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
-  font-weight: 700;
-  font-size: 22px;
-  color: var(--accent);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--gold);
 }
 
-.header nav a {
-  margin-left: 30px;
-  text-decoration: none;
-  color: var(--text);
-  position: relative;
+nav a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    transition: var(--transition);
 }
 
-.header nav a::after {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: var(--accent);
-  transition: 0.3s;
+nav a:hover {
+    color: var(--gold);
 }
 
-.header nav a:hover::after {
-  width: 100%;
+/* ===================================
+   HERO SECTION
+=================================== */
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1920') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
 }
 
-/* HERO PARALLAX */
-
-.hero-parallax {
-  height: 100vh;
-  background: linear-gradient(rgba(15,23,42,0.75), rgba(15,23,42,0.9)),
-              url("imagens/CH001/chacara1.jpg") center/cover fixed no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 0 20px;
+.hero-content {
+    max-width: 900px;
+    margin: auto;
+    animation: fadeUp 1.2s ease;
 }
 
-.hero-overlay h1 {
-  font-size: 52px;
-  margin-bottom: 20px;
+.hero h1 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
-.hero-overlay p {
-  font-size: 20px;
-  margin-bottom: 30px;
-  color: var(--muted);
+.hero p {
+    font-size: 18px;
+    color: var(--gray);
+    margin-bottom: 40px;
 }
-
-/* BOTÃO */
 
 .btn-primary {
-  padding: 14px 30px;
-  background: linear-gradient(45deg, var(--accent), var(--accent-soft));
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  color: black;
-  transition: 0.3s;
+    padding: 15px 40px;
+    background: var(--gold);
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+    border-radius: 5px;
 }
 
 .btn-primary:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 25px rgba(198,168,91,0.4);
+    background: var(--gold-light);
+    transform: translateY(-3px);
 }
 
-/* DIFERENCIAIS */
+/* ===================================
+   SOBRE
+=================================== */
 
-.diferenciais {
-  display: flex;
-  justify-content: space-around;
-  padding: 120px 60px;
-  background: var(--secondary);
-  flex-wrap: wrap;
-  gap: 40px;
+.sobre {
+    padding: 120px 0;
+    background: var(--black-soft);
 }
 
-.diferencial {
-  max-width: 300px;
+.sobre h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--gold);
 }
 
-.diferencial h3 {
-  color: var(--accent);
-  margin-bottom: 15px;
+.sobre p {
+    color: var(--gray);
+    line-height: 1.8;
 }
 
-/* CTA FINAL */
+/* ===================================
+   IMÓVEIS
+=================================== */
 
-.cta-final {
-  padding: 120px 20px;
-  text-align: center;
-  background: linear-gradient(135deg, var(--accent), var(--accent-soft));
-  color: black;
+.imoveis {
+    padding: 120px 0;
 }
 
-.footer {
-  padding: 40px;
-  text-align: center;
-  background: #0a0f1d;
-  color: var(--muted);
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
 }
 
-/* SCROLL REVEAL */
-
-.reveal {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s ease;
+.card {
+    background: var(--black-soft);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: var(--transition);
+    border: 1px solid rgba(198, 161, 74, 0.1);
 }
 
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0);
+.card:hover {
+    transform: translateY(-10px);
+    border: 1px solid var(--gold);
 }
 
-.delay { transition-delay: 0.2s; }
-.delay2 { transition-delay: 0.4s; }
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
 
-/* RESPONSIVO */
+.card-content {
+    padding: 25px;
+}
 
-@media (max-width: 900px) {
-  .hero-overlay h1 {
-    font-size: 32px;
-  }
+.card-content h3 {
+    margin-bottom: 10px;
+    color: var(--gold);
+}
 
-  .diferenciais {
-    padding: 80px 20px;
-  }
+.card-content p {
+    color: var(--gray);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* ===================================
+   DEPOIMENTOS
+=================================== */
+
+.depoimentos {
+    padding: 120px 0;
+    background: var(--black-soft);
+}
+
+.depoimento {
+    max-width: 700px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.depoimento p {
+    font-style: italic;
+    color: var(--gray);
+}
+
+.depoimento strong {
+    display: block;
+    margin-top: 20px;
+    color: var(--gold);
+}
+
+/* ===================================
+   CTA FINAL
+=================================== */
+
+.cta {
+    padding: 120px 0;
+    text-align: center;
+    background: linear-gradient(135deg, #111, #1a1a1a);
+}
+
+.cta h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* ===================================
+   FOOTER
+=================================== */
+
+footer {
+    padding: 40px 0;
+    text-align: center;
+    background: #000;
+    color: #777;
+    font-size: 14px;
+}
+
+/* ===================================
+   ANIMAÇÕES
+=================================== */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===================================
+   RESPONSIVO
+=================================== */
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    nav {
+        display: none;
+    }
 }
