@@ -65,4 +65,23 @@ window.addEventListener("scroll", function(){
     } else {
         header.style.background = "rgba(14,14,17,0.6)";
     }
+
+    // Scroll Reveal Profissional
+const reveals = document.querySelectorAll('.reveal');
+
+function revealOnScroll() {
+  const triggerBottom = window.innerHeight * 0.85;
+
+  reveals.forEach(reveal => {
+    const boxTop = reveal.getBoundingClientRect().top;
+
+    if (boxTop < triggerBottom) {
+      reveal.classList.add('active');
+    }
+  });
+    
+}
+
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);
 });
