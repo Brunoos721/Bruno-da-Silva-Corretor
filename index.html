@@ -3,75 +3,170 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bruno da Silva | Especialista em Imóveis</title>
+
+<title>Bruno da Silva | Terrenos e Chácaras em Capão da Canoa</title>
+
+<meta name="description" content="Terrenos e chácaras em Capão da Canoa e região. Atendimento transparente, acompanhamento responsável e oportunidades reais.">
+<meta name="keywords" content="chácara em Capão da Canoa, terrenos Curumim, imóveis Capão da Canoa">
+<meta name="author" content="Bruno da Silva">
 
 <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
 
-<header>
+<header class="navbar">
     <div class="logo">Bruno da Silva</div>
     <nav>
-        <a href="#">Início</a>
-        <a href="#">Imóveis</a>
-        <a href="#">Sobre</a>
-        <a href="#">Contato</a>
+        <a href="index.html" class="active">Início</a>
+        <a href="imoveis/chacaras.html">Chácaras</a>
+        <a href="https://wa.me/5551999190482" target="_blank">Contato</a>
     </nav>
 </header>
 
+<!-- HERO -->
 <section class="hero">
-    <div class="hero-content">
-        <h1>Segurança. Patrimônio. Futuro.</h1>
-        <p>Imóveis estratégicos para quem busca tranquilidade e valorização.</p>
+    <div class="overlay"></div>
+    <div class="hero-content" data-aos="fade-up">
+        <h1>Segurança para investir.<br>Confiança para decidir.</h1>
+        <p>
+            Terrenos e chácaras em Capão da Canoa com atendimento direto,
+            transparente e acompanhamento responsável.
+        </p>
         <div class="buttons">
-            <a href="#" class="btn-primary">Explorar Imóveis</a>
-            <a href="#" class="btn-outline">Atendimento Exclusivo</a>
+            <a href="imoveis/chacaras.html" class="btn-primary">Ver Imóveis</a>
+            <a href="https://wa.me/5551999190482" target="_blank" class="btn-outline">
+                Falar comigo
+            </a>
         </div>
     </div>
 </section>
 
-<section class="autoridade">
-    <div class="container">
-        <div class="texto">
-            <h2>Compromisso com Segurança e Confiança</h2>
-            <p>Mais do que apresentar imóveis, meu compromisso é garantir que cada decisão seja segura, estratégica e alinhada ao seu momento de vida.</p>
-        </div>
-    </div>
-</section>
+<!-- DIFERENCIAIS -->
+<section class="about">
+    <div class="about-container" data-aos="fade-up">
+        <h2>Por que contar comigo?</h2>
 
-<section class="imoveis">
-    <h2>Imóveis em Destaque</h2>
-    <div class="grid">
-        <div class="card">
-            <img src="imagens/imovel1.jpg" alt="">
-            <div class="card-info">
-                <h3>Chácara Premium</h3>
-                <p>Espaço ideal para tranquilidade e valorização.</p>
-                <span>Saiba mais</span>
+        <div class="about-grid">
+
+            <div class="about-box">
+                <h3>Transparência</h3>
+                <p>Clareza nas informações, documentação e processo de negociação.</p>
             </div>
-        </div>
 
-        <div class="card">
-            <img src="imagens/imovel2.jpg" alt="">
-            <div class="card-info">
-                <h3>Casa Moderna</h3>
-                <p>Conforto, elegância e localização estratégica.</p>
-                <span>Saiba mais</span>
+            <div class="about-box">
+                <h3>Acompanhamento Real</h3>
+                <p>Atendimento direto, sem intermediários, do primeiro contato até a decisão final.</p>
             </div>
+
+            <div class="about-box">
+                <h3>Responsabilidade</h3>
+                <p>Indicações feitas com análise consciente, pensando na segurança do cliente.</p>
+            </div>
+
         </div>
     </div>
 </section>
 
+<!-- IMÓVEL EM DESTAQUE -->
+<section class="featured">
+    <div class="featured-container" data-aos="fade-up">
+
+        <h2>Oportunidade em Destaque</h2>
+
+        <div class="property-card">
+
+            <a href="imoveis/chacara-estrada-da-laguna.html">
+                <img src="imagens/CH001/chacara1.jpg" alt="Chácara Estrada da Laguna">
+            </a>
+
+            <div class="property-info">
+                <span class="code">CH001</span>
+                <h3>Chácara Estrada da Laguna</h3>
+                <p>Capão da Canoa – Curumim</p>
+                <p>30x45m</p>
+                <div class="price">R$ 170.000,00</div>
+
+                <div class="buttons" style="margin-top:20px;">
+                    <a href="imoveis/chacara-estrada-da-laguna.html" class="btn-primary">Ver Detalhes</a>
+                    <a href="https://wa.me/5551999190482?text=Tenho%20interesse%20na%20CH001"
+                       class="btn-outline"
+                       target="_blank">
+                       WhatsApp
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- SOBRE -->
+<section class="about-personal">
+    <div class="about-personal-container" data-aos="fade-up">
+
+        <h2>Compromisso com cada decisão</h2>
+
+        <p>
+            Meu nome é Bruno da Silva. Estou em formação profissional no mercado imobiliário,
+            aprofundando meus conhecimentos para oferecer um atendimento cada vez mais responsável.
+        </p>
+
+        <p>
+            Acredito que adquirir um terreno ou imóvel não é apenas uma compra —
+            é uma decisão que envolve segurança, planejamento e confiança.
+            Por isso, meu compromisso é atuar com seriedade, clareza e acompanhamento direto.
+        </p>
+
+        <a href="https://wa.me/5551999190482" target="_blank" class="btn-primary">
+            Conversar diretamente comigo
+        </a>
+
+    </div>
+</section>
+
+<!-- CTA FINAL -->
 <section class="cta">
-    <h2>Vamos encontrar o imóvel ideal para você?</h2>
-    <a href="#" class="btn-primary">Falar no WhatsApp</a>
+    <div data-aos="fade-up">
+        <h2>Vamos encontrar o imóvel certo para você.</h2>
+        <a href="https://wa.me/5551999190482" target="_blank" class="btn-primary">
+            Falar no WhatsApp
+        </a>
+    </div>
 </section>
 
-<footer>
-    <p>© 2026 Bruno da Silva - Todos os direitos reservados</p>
+<footer class="footer">
+    <div class="footer-content">
+        <h3>Bruno da Silva</h3>
+        <p>Atendimento Imobiliário em Formação</p>
+        <p>WhatsApp: (51) 99919-0482</p>
+        <p class="copyright">
+            © 2026 Bruno da Silva - Todos os direitos reservados
+        </p>
+    </div>
 </footer>
+
+<a href="https://wa.me/5551999190482?text=Olá%20Bruno,%20tenho%20interesse%20em%20um%20imóvel."
+   class="whatsapp-float"
+   target="_blank">
+   💬
+</a>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({
+    duration: 900,
+    once: true
+});
+
+window.addEventListener("scroll", function(){
+    const navbar = document.querySelector(".navbar");
+    navbar.classList.toggle("scrolled", window.scrollY > 50);
+});
+</script>
 
 </body>
 </html>
