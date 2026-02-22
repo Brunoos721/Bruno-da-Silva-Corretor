@@ -3,129 +3,75 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bruno da Silva | Corretor de Imóveis</title>
+<title>Bruno da Silva | Especialista em Imóveis</title>
 
 <link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
 
-<header class="navbar">
+<header>
     <div class="logo">Bruno da Silva</div>
     <nav>
-        <a href="index.html">Início</a>
-        <a href="imoveis/chacaras.html">Chácaras</a>
-        <a href="https://wa.me/5551999190482" target="_blank">Contato</a>
+        <a href="#">Início</a>
+        <a href="#">Imóveis</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
     </nav>
 </header>
 
-<!-- HERO MODERNA -->
-
 <section class="hero">
-    <div class="hero-overlay"></div>
-
-    <div class="hero-content" data-aos="fade-up">
-        <span class="hero-tag">Corretor de Imóveis</span>
-        <h1>Encontre o imóvel ideal<br>com segurança e transparência</h1>
-        <p>Atendimento direto, negociação clara e oportunidades reais para morar ou investir.</p>
-
+    <div class="hero-content">
+        <h1>Segurança. Patrimônio. Futuro.</h1>
+        <p>Imóveis estratégicos para quem busca tranquilidade e valorização.</p>
         <div class="buttons">
-            <a href="imoveis/chacaras.html" class="btn-primary">
-                Ver Imóveis Disponíveis
-            </a>
-            <a href="https://wa.me/5551999190482" target="_blank" class="btn-outline">
-                Falar no WhatsApp
-            </a>
+            <a href="#" class="btn-primary">Explorar Imóveis</a>
+            <a href="#" class="btn-outline">Atendimento Exclusivo</a>
         </div>
     </div>
 </section>
 
-<!-- DIFERENCIAL -->
-
-<section class="diferencial">
+<section class="autoridade">
     <div class="container">
-
-        <div class="section-header" data-aos="fade-up">
-            <h2>Compromisso com cada negociação</h2>
-            <p>Mais do que vender imóveis, eu ajudo você a tomar decisões seguras.</p>
-        </div>
-
-        <div class="diferencial-grid">
-
-            <div class="diferencial-card" data-aos="fade-up" data-aos-delay="100">
-                <h3>📍 Conhecimento da Região</h3>
-                <p>Atuação local com visão real de mercado e valorização.</p>
-            </div>
-
-            <div class="diferencial-card" data-aos="fade-up" data-aos-delay="200">
-                <h3>📊 Análise Clara</h3>
-                <p>Orientação transparente sobre preço, documentação e potencial.</p>
-            </div>
-
-            <div class="diferencial-card" data-aos="fade-up" data-aos-delay="300">
-                <h3>🤝 Atendimento Direto</h3>
-                <p>Contato pessoal, acompanhamento e suporte do início ao fim.</p>
-            </div>
-
+        <div class="texto">
+            <h2>Compromisso com Segurança e Confiança</h2>
+            <p>Mais do que apresentar imóveis, meu compromisso é garantir que cada decisão seja segura, estratégica e alinhada ao seu momento de vida.</p>
         </div>
     </div>
 </section>
 
-<!-- CTA ELEGANTE -->
+<section class="imoveis">
+    <h2>Imóveis em Destaque</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="imagens/imovel1.jpg" alt="">
+            <div class="card-info">
+                <h3>Chácara Premium</h3>
+                <p>Espaço ideal para tranquilidade e valorização.</p>
+                <span>Saiba mais</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="imagens/imovel2.jpg" alt="">
+            <div class="card-info">
+                <h3>Casa Moderna</h3>
+                <p>Conforto, elegância e localização estratégica.</p>
+                <span>Saiba mais</span>
+            </div>
+        </div>
+    </div>
+</section>
 
 <section class="cta">
-    <div class="cta-content" data-aos="fade-up">
-        <h2>Vamos conversar sobre seu próximo imóvel?</h2>
-        <a href="https://wa.me/5551999190482?text=Olá%20Bruno,%20tenho%20interesse%20em%20imóveis."
-           target="_blank"
-           class="btn-primary">
-           Conversar Agora
-        </a>
-    </div>
+    <h2>Vamos encontrar o imóvel ideal para você?</h2>
+    <a href="#" class="btn-primary">Falar no WhatsApp</a>
 </section>
 
-<!-- FOOTER PROFISSIONAL -->
-
-<footer class="footer">
-    <div class="footer-container">
-
-        <div class="footer-brand">
-            <h3>Bruno da Silva</h3>
-            <p>Corretor de Imóveis</p>
-        </div>
-
-        <div class="footer-contact">
-            <p>WhatsApp: (51) 99919-0482</p>
-        </div>
-
-        <div class="footer-copy">
-            © 2026 Bruno da Silva — Todos os direitos reservados
-        </div>
-
-    </div>
+<footer>
+    <p>© 2026 Bruno da Silva - Todos os direitos reservados</p>
 </footer>
-
-<a href="https://wa.me/5551999190482?text=Olá%20Bruno,%20tenho%20interesse%20em%20imóveis."
-   class="whatsapp-float"
-   target="_blank">
-   💬
-</a>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-AOS.init({
-    duration: 800,
-    once: true
-});
-
-window.addEventListener("scroll", function(){
-    const navbar = document.querySelector(".navbar");
-    navbar.classList.toggle("scrolled", window.scrollY > 60);
-});
-</script>
 
 </body>
 </html>
