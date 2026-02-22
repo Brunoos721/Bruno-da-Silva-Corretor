@@ -3,136 +3,71 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CH001 | Chácara Estrada da Laguna</title>
+<title>Chácaras Disponíveis | Bruno da Silva</title>
 
 <link rel="stylesheet" href="../style.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-</head>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
+</head>
 <body>
 
-<header class="navbar">
+<header class="header">
     <div class="logo">Bruno da Silva</div>
     <nav>
         <a href="../index.html">Início</a>
-        <a href="chacaras.html">Chácaras</a>
+        <a href="chacras.html">Chácaras</a>
+        <a href="https://wa.me/5551999190482?text=Olá Bruno, quero mais informações sobre chácaras." target="_blank">
+            Contato
+        </a>
     </nav>
 </header>
 
-<section class="property-hero">
+<section class="page-hero">
+    <div class="page-hero-content">
+        <h1>Chácaras Selecionadas</h1>
+        <p>Espaço, tranquilidade e potencial de valorização.</p>
+    </div>
+</section>
 
-    <div class="badge">OPORTUNIDADE</div>
+<section class="imoveis-section">
 
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="../imagens/CH001/chacara1.jpg"></div>
-            <div class="swiper-slide"><img src="../imagens/CH001/chacara2.jpg"></div>
-            <div class="swiper-slide"><img src="../imagens/CH001/chacara3.jpg"></div>
-            <div class="swiper-slide"><img src="../imagens/CH001/chacara4.jpg"></div>
-            <div class="swiper-slide"><img src="../imagens/CH001/chacara5.jpg"></div>
-            <div class="swiper-slide"><img src="../imagens/CH001/chacara6.jpg"></div>
+    <div class="imovel-card">
+        <img src="images/chacara-laguna.jpg" alt="Chácara Estrada da Laguna">
+        <div class="imovel-info">
+            <h2>Chácara na Estrada da Laguna</h2>
+            <p>
+                Terreno amplo, localização estratégica e excelente potencial de valorização.
+                Ideal para moradia ou investimento.
+            </p>
+
+            <ul class="imovel-detalhes">
+                <li>✔ Área ampla</li>
+                <li>✔ Fácil acesso</li>
+                <li>✔ Região em crescimento</li>
+            </ul>
+
+            <a href="chacara-estrada-laguna.html" class="btn-primary">
+                Ver Detalhes
+            </a>
         </div>
-
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
     </div>
 
 </section>
 
-<section class="property-info-premium">
-
-    <div class="info-left">
-
-        <span class="code-detail">Código CH001</span>
-
-        <h1>Chácara Estrada da Laguna</h1>
-
-        <p class="location">Capão da Canoa – Curumim</p>
-
-        <div class="price-detail">R$ 170.000,00</div>
-
-        <div class="specs">
-            <div>📏 30x45m</div>
-            <div>💧 Água disponível</div>
-            <div>⚡ Energia elétrica</div>
-            <div>🛣 Estrada de chão</div>
-            <div>🎢 1km do Acqua Lokos</div>
-            <div>📄 Contrato compra e venda</div>
-        </div>
-
-        <div class="description">
-            <h2>Sobre o imóvel</h2>
-            <p>
-                Terreno amplo em região tranquila, ideal para moradia,
-                lazer ou investimento. Excelente oportunidade para quem
-                busca contato com a natureza e valorização futura.
-            </p>
-        </div>
-
-        <a href="https://wa.me/5551999190482?text=Tenho%20interesse%20na%20CH001"
-           class="btn-whatsapp-premium"
-           target="_blank">
-           Solicitar Atendimento
-        </a>
-
-    </div>
-
-    <div class="info-right">
-        <h2>Localização</h2>
-
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3468.32680955775!2d-49.974777800000005!3d-29.623250000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjnCsDM3JzIzLjciUyA0OcKwNTgnMjkuMiJX!5e0!3m2!1spt-BR!2sbr!4v1771546420621!5m2!1spt-BR!2sbr"
-            width="100%" 
-            height="380"
-            style="border:0; border-radius:20px; box-shadow: 0 30px 80px rgba(0,0,0,0.15);"
-            allowfullscreen=""
-            loading="lazy">
-        </iframe>
-
-    </div>
-
+<section class="cta-final">
+    <h2>Não encontrou o que procura?</h2>
+    <p>Me chame no WhatsApp e eu busco a melhor oportunidade para você.</p>
+    <a href="https://wa.me/5551999190482?text=Olá Bruno, quero ajuda para encontrar uma chácara." 
+       class="btn-primary" target="_blank">
+       Falar Agora
+    </a>
 </section>
 
 <footer class="footer">
-    <div class="footer-container">
-        <h3>Bruno da Silva</h3>
-        <p>Consultoria Imobiliária</p>
-        <p>(51) 99919-0482</p>
-        <div class="footer-copy">
-            © 2026 Bruno da Silva - Todos os direitos reservados
-        </div>
-    </div>
+    <p>© 2026 Bruno da Silva - Todos os direitos reservados</p>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-<script>
-var swiper = new Swiper(".mySwiper", {
-  loop: true,
-  spaceBetween: 20,
-  centeredSlides: true,
-  autoplay: {
-    delay: 3500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-</script>
-
-<script>
-window.addEventListener("scroll", function(){
-    const navbar = document.querySelector(".navbar");
-    navbar.classList.toggle("scrolled", window.scrollY > 50);
-});
-</script>
+<script src="../script.js"></script>
 
 </body>
 </html>
