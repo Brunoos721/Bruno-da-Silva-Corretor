@@ -1,85 +1,109 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chácaras | Bruno da Silva</title>
 
-<link rel="stylesheet" href="../style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<title>Bruno da Silva | Corretor de Imóveis Premium</title>
+<meta name="description" content="Encontre terrenos, chácaras e imóveis selecionados com segurança e confiança. Atendimento profissional, transparente e personalizado.">
+
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 </head>
-
 <body>
 
-<header class="navbar">
-    <div class="logo">Bruno da Silva</div>
-    <nav>
-        <a href="../index.html">Início</a>
-        <a href="chacaras.html">Chácaras</a>
-        <a href="https://wa.me/5551999190482" target="_blank">Contato</a>
-    </nav>
+<header class="header">
+  <div class="logo">BRUNO DA SILVA</div>
+  <nav>
+    <ul>
+      <li><a href="#">Início</a></li>
+      <li><a href="#imoveis">Imóveis</a></li>
+      <li><a href="imoveis/chacras.html">Chácaras</a></li>
+      <li><a href="#">Casas</a></li>
+      <li><a href="#">Terrenos</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#contato" class="btn-nav">Falar Comigo</a></li>
+    </ul>
+  </nav>
 </header>
 
-<section class="page-header" data-aos="fade-up">
-    <div class="container">
-        <h1>Chácaras Disponíveis</h1>
-        <p>Imóveis selecionados com potencial de valorização</p>
-    </div>
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Você não está procurando um imóvel.</h1>
+    <h2>Você está procurando o lugar certo para viver sua história.</h2>
+    <p>Segurança. Confiança. Escolhas inteligentes. Atendimento humano e profissional.</p>
+    <a href="#imoveis" class="btn-primary">Ver Imóveis Disponíveis</a>
+  </div>
 </section>
 
-<section class="property-grid container">
+<section class="credibilidade">
+  <div class="credibilidade-box">
+    <h3>Compromisso com transparência</h3>
+    <p>Processo seguro, documentação analisada, suporte completo do início ao fim.</p>
+  </div>
+  <div class="credibilidade-box">
+    <h3>Atendimento personalizado</h3>
+    <p>Cada cliente recebe orientação estratégica para tomar a melhor decisão.</p>
+  </div>
+  <div class="credibilidade-box">
+    <h3>Visão de longo prazo</h3>
+    <p>Não vendo apenas imóveis. Construo relações e histórias.</p>
+  </div>
+</section>
 
-    <div class="property-card" data-aos="fade-up">
+<section id="imoveis" class="imoveis">
+  <h2>Imóveis Selecionados</h2>
 
-        <a href="chacara-estrada-da-laguna.html">
-            <img src="../imagens/CH001/chacara1.jpg" alt="Chácara Estrada da Laguna">
-        </a>
+  <div class="imoveis-grid">
 
-        <div class="property-info">
-            <span class="code">CH001</span>
-            <h3>Chácara Estrada da Laguna</h3>
-            <p class="location">Capão da Canoa – Curumim</p>
-
-            <div class="price">R$ 170.000,00</div>
-
-            <div class="property-buttons">
-                <a href="chacara-estrada-da-laguna.html" class="btn-primary">
-                    Ver Detalhes
-                </a>
-
-                <a href="https://wa.me/5551999190482?text=Tenho%20interesse%20na%20CH001"
-                   class="btn-outline"
-                   target="_blank">
-                   WhatsApp
-                </a>
-            </div>
-        </div>
-
+    <div class="imovel-card">
+      <img src="img/chacara-laguna.jpg" alt="Chácara Estrada da Laguna">
+      <div class="imovel-info">
+        <h3>Chácara - Estrada da Laguna</h3>
+        <p>Natureza, espaço e tranquilidade para viver com qualidade.</p>
+        <a href="imoveis/chacara-estrada-laguna.html" class="btn-card">Ver Detalhes</a>
+      </div>
     </div>
 
+    <div class="imovel-card">
+      <img src="img/terreno-exemplo.jpg" alt="Terreno Premium">
+      <div class="imovel-info">
+        <h3>Terreno Residencial</h3>
+        <p>Localização estratégica e alto potencial de valorização.</p>
+        <a href="#" class="btn-card">Ver Detalhes</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="sobre" class="sobre">
+  <div class="sobre-content">
+    <h2>Mais que um corretor.</h2>
+    <h3>Um parceiro na sua decisão.</h3>
+    <p>
+      Meu compromisso é oferecer clareza, segurança jurídica e orientação estratégica.
+      Comprar um imóvel é uma das decisões mais importantes da vida.
+      Você merece fazer isso com confiança.
+    </p>
+  </div>
+</section>
+
+<section class="cta-final">
+  <h2>Vamos encontrar o imóvel certo para você?</h2>
+  <a href="https://wa.me/5551999190482" target="_blank" class="btn-primary">
+    Falar diretamente comigo no WhatsApp
+  </a>
 </section>
 
 <footer class="footer">
-    <div class="footer-container">
-        <h3>Bruno da Silva</h3>
-        <p>Consultoria Imobiliária</p>
-        <p>(51) 99919-0482</p>
-        <div class="footer-copy">
-            © 2026 Bruno da Silva - Todos os direitos reservados
-        </div>
-    </div>
+  <p>© 2026 Bruno da Silva - Corretor de Imóveis</p>
+  <p>Atendimento personalizado | Segurança | Transparência</p>
 </footer>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-AOS.init({ duration: 900, once: true });
-
-window.addEventListener("scroll", function(){
-    const navbar = document.querySelector(".navbar");
-    navbar.classList.toggle("scrolled", window.scrollY > 50);
-});
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
