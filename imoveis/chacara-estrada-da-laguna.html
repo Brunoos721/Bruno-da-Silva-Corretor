@@ -1,123 +1,169 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Chácara Estrada da Laguna | Bruno da Silva</title>
+<meta name="description" content="Chácara 30x45m na Estrada da Laguna. Espaço, tranquilidade e potencial de valorização. Atendimento direto e transparente.">
 
 <link rel="stylesheet" href="../style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
+<div class="loader"></div>
+
 <header class="header">
-    <div class="logo">Bruno da Silva</div>
-    <nav>
-        <a href="../index.html">Início</a>
-        <a href="chacras.html">Chácaras</a>
-        <a href="https://wa.me/5551999190482?text=Olá Bruno, quero mais informações sobre a Chácara Estrada da Laguna." target="_blank">
-            Contato
+  <div class="logo">BRUNO DA SILVA</div>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="chacras.html">Chácaras</a></li>
+      <li>
+        <a href="https://wa.me/5551999190482?text=Olá Bruno, tenho interesse na Chácara Estrada da Laguna." 
+           class="btn-nav" 
+           target="_blank">
+           Falar Comigo
         </a>
-    </nav>
+      </li>
+    </ul>
+  </nav>
 </header>
 
-<section class="imovel-hero">
-    <div class="imovel-overlay">
-        <h1>Chácara Estrada da Laguna</h1>
-        <p>Espaço, tranquilidade e potencial de valorização.</p>
-        <div class="imovel-preco">R$ 170.000,00</div>
-    </div>
-</section>
+<!-- HERO EMOCIONAL -->
 
-<section class="imovel-detalhes-section">
-
-    <div class="imovel-coluna">
-
-        <h2>Sobre o Imóvel</h2>
-        <p>
-            Esta chácara está localizada na Estrada da Laguna, região de Curumim,
-            em Capão da Canoa. Um ponto estratégico para quem deseja tranquilidade,
-            contato com a natureza e ao mesmo tempo proximidade com a cidade.
-        </p>
-
-        <p>
-            Com metragem ampla (30x45m), o terreno oferece excelente espaço para
-            construção de moradia, casa de veraneio ou investimento visando valorização.
-        </p>
-
-        <div class="imovel-especificacoes">
-            <div>📏 30x45m</div>
-            <div>⚡ Energia elétrica disponível</div>
-            <div>💧 Água disponível</div>
-            <div>🛣 Fácil acesso</div>
-            <div>🎢 Aproximadamente 1km do Acqua Lokos</div>
-            <div>📄 Contrato de compra e venda</div>
-        </div>
-
-    </div>
-
-    <div class="imovel-coluna">
-
-        <h2>Por que esse imóvel pode ser ideal para você?</h2>
-
-        <ul class="lista-beneficios">
-            <li>✔ Região em crescimento constante</li>
-            <li>✔ Excelente custo-benefício</li>
-            <li>✔ Ideal para moradia ou investimento</li>
-            <li>✔ Local tranquilo e seguro</li>
-            <li>✔ Potencial de valorização nos próximos anos</li>
-        </ul>
-
-        <div class="cta-box">
-            <h3>Quer mais informações?</h3>
-            <p>
-                Entre em contato direto comigo e receba fotos,
-                localização exata e todos os detalhes.
-            </p>
-
-            <a href="https://wa.me/5551999190482?text=Olá Bruno, tenho interesse na Chácara Estrada da Laguna." 
-               class="btn-primary"
-               target="_blank">
-               Falar no WhatsApp
-            </a>
-        </div>
-
-    </div>
-
-</section>
-
-<section class="localizacao-section">
-
-    <h2>Localização</h2>
-
-    <div class="map-container">
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3468.32680955775!2d-49.974777800000005!3d-29.623250000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjnCsDM3JzIzLjciUyA0OcKwNTgnMjkuMiJX!5e0!3m2!1spt-BR!2sbr!4v1771546420621!5m2!1spt-BR!2sbr"
-            width="100%" 
-            height="400" 
-            style="border:0; border-radius:16px;" 
-            allowfullscreen="" 
-            loading="lazy">
-        </iframe>
-    </div>
-
-</section>
-
-<section class="cta-final">
-    <h2>Agende uma visita ou solicite mais detalhes</h2>
-    <p>Estou à disposição para esclarecer qualquer dúvida.</p>
-
-    <a href="https://wa.me/5551999190482?text=Olá Bruno, quero agendar uma visita na Chácara Estrada da Laguna." 
-       class="btn-primary"
-       target="_blank">
-       Agendar Agora
+<section class="imovel-hero reveal">
+  <div class="imovel-overlay">
+    <h1>Chácara Estrada da Laguna</h1>
+    <p>Espaço para viver com liberdade. Potencial para investir com inteligência.</p>
+    <div class="imovel-preco">R$ 170.000,00</div>
+    <a href="#contato" class="btn-primary" style="margin-top:25px;">
+      Solicitar Informações
     </a>
+  </div>
+</section>
+
+<!-- BLOCO PRINCIPAL -->
+
+<section class="imovel-detalhes-section reveal">
+
+  <div class="imovel-coluna">
+
+    <h2>Sobre o Imóvel</h2>
+
+    <p>
+      Localizada na Estrada da Laguna, região de Curumim – Capão da Canoa,
+      esta chácara oferece o equilíbrio ideal entre tranquilidade e acesso urbano.
+    </p>
+
+    <p>
+      Com dimensões de 30x45m, o terreno proporciona espaço amplo para
+      construção residencial, casa de lazer ou projeto de valorização futura.
+      Uma escolha estratégica para quem busca patrimônio sólido.
+    </p>
+
+    <div class="imovel-especificacoes">
+      <div>📏 Terreno 30x45m</div>
+      <div>⚡ Energia elétrica disponível</div>
+      <div>💧 Água disponível</div>
+      <div>🛣 Fácil acesso</div>
+      <div>🎢 Aproximadamente 1km do Acqua Lokos</div>
+      <div>📄 Contrato de compra e venda</div>
+    </div>
+
+  </div>
+
+  <div class="imovel-coluna">
+
+    <h2>Por que essa pode ser a escolha certa?</h2>
+
+    <ul class="lista-beneficios">
+      <li>✔ Região em crescimento constante</li>
+      <li>✔ Excelente custo-benefício</li>
+      <li>✔ Ideal para moradia ou investimento</li>
+      <li>✔ Local tranquilo e reservado</li>
+      <li>✔ Potencial real de valorização</li>
+    </ul>
+
+    <div class="cta-box" id="contato">
+      <h3>Converse diretamente comigo</h3>
+      <p>
+        Posso enviar fotos adicionais, localização exata,
+        esclarecer dúvidas sobre documentação
+        e analisar se esse imóvel combina com seu objetivo.
+      </p>
+
+      <a href="https://wa.me/5551999190482?text=Olá Bruno, quero receber mais detalhes sobre a Chácara Estrada da Laguna."
+         class="btn-primary"
+         target="_blank">
+         Receber Detalhes no WhatsApp
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- BLOCO VALORIZAÇÃO -->
+
+<section class="sobre reveal">
+  <div class="sobre-content">
+    <h2>Visão Estratégica</h2>
+    <h3>Terrenos bem posicionados tendem a se valorizar.</h3>
+    <p>
+      A proximidade com pontos turísticos e expansão urbana
+      aumenta o potencial de crescimento da região.
+      Escolher bem hoje pode representar segurança patrimonial amanhã.
+    </p>
+  </div>
+</section>
+
+<!-- LOCALIZAÇÃO -->
+
+<section class="localizacao-section reveal">
+  <h2>Localização</h2>
+
+  <div class="map-container">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3468.32680955775!2d-49.974777800000005!3d-29.623250000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjnCsDM3JzIzLjciUyA0OcKwNTgnMjkuMiJX!5e0!3m2!1spt-BR!2sbr!4v1771546420621!5m2!1spt-BR!2sbr"
+      width="100%" 
+      height="400" 
+      style="border:0; border-radius:16px;" 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+
+<section class="cta-final reveal">
+  <h2>Vamos conversar sobre essa oportunidade?</h2>
+  <p>
+    Atendimento direto, transparente e sem compromisso.
+    Meu objetivo é ajudar você a tomar a decisão certa.
+  </p>
+
+  <a href="https://wa.me/5551999190482?text=Olá Bruno, quero agendar uma visita na Chácara Estrada da Laguna."
+     class="btn-primary"
+     target="_blank">
+     Agendar Visita
+  </a>
 </section>
 
 <footer class="footer">
-    <p>© 2026 Bruno da Silva - Todos os direitos reservados</p>
+  <p>© 2026 Bruno da Silva</p>
+  <p>Transparência • Segurança • Atendimento Estratégico</p>
 </footer>
+
+<a href="https://wa.me/5551999190482?text=Olá Bruno, tenho interesse na Chácara Estrada da Laguna."
+   class="whatsapp-float"
+   target="_blank">
+💬
+</a>
 
 <script src="../script.js"></script>
 
